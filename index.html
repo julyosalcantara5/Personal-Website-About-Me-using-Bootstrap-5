@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julius Alcantara - Resume</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light text-center">
+<body>
 
-    <div class="container mt-5">
-        <div class="card shadow-lg p-4">
-            <h1 class="text-primary">Julius Alcantara</h1>
-            <h5 class="text-muted">BS Information Technology - Pateros Technological College</h5>
-            <hr>
+  <main class="container my-5">
+    <div class="card shadow p-4 text-center bg-white">
+      <h1 class="text-primary">Julius Alcantara</h1>
+      <h5 class="text-muted mb-3">BS Information Technology - Pateros Technological College</h5>
+      <hr>
 
-            <h2>About Me</h2>
-            <p>Hi! I'm Julius Alcantara, a third-year BS Information Technology student at Pateros Technological College.</p>
+      <section class="section">
+        <h2>About Me</h2>
+        <p>Hi! I'm Julius Alcantara, a third-year BS Information Technology student at Pateros Technological College.</p>
+      </section>
 
-            <h2>My Interests</h2>
-            <p>Cybersecurity | Coding | Database | Editing | PC Builds | Camera Gear | Guitar</p>
+      <section class="section">
+        <h2>My Interests</h2>
+        <p>Cybersecurity | Coding | Database | Editing | PC Builds | Camera Gear | Guitar</p>
+      </section>
 
-            <h2>My Skills</h2>
-            <p>Strategist | Resourceful | Productive | Creative</p>
-
-            <h2>My Hobbies</h2>
-            <p>Playing Guitar | Editing Videos and Photos | Playing Games | Watching Camera Reviews | Watching PC Builds | Sleeping</p>
-
-            <h2>Contacts</h2>
-            <p>Institutional Email: <a href="mailto:jnalcantara@paterostechnologicalcollege.edu.ph">jnalcantara@paterostechnologicalcollege.edu.ph</a></p>
-            <p>Email: <a href="mailto:juliusalcantara215@gmail.com">juliusalcantara215@gmail.com</a></p>
+      <section class="section">
+        <button class="btn btn-outline-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#skillsCollapse">
+          Show Skills
+        </button>
+        <div class="collapse" id="skillsCollapse">
+          <div class="card card-body mt-2">
+            Strategist | Resourceful | Productive | Creative
+          </div>
         </div>
+      </section>
+
+      <section class="section">
+        <button class="btn btn-outline-secondary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#hobbiesCollapse">
+          Show Hobbies
+        </button>
+        <div class="collapse" id="hobbiesCollapse">
+          <div class="card card-body mt-2">
+            Playing Guitar | Editing Videos and Photos | Playing Games | Watching Camera Reviews | Watching PC Builds | Sleeping
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Contacts</h2>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+          Contact Me
+        </button>
+      </section>
     </div>
+  </main>
 
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-start">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Institutional Email:</strong><br>
+            <a href="mailto:jnalcantara@paterostechnologicalcollege.edu.ph">jnalcantara@paterostechnologicalcollege.edu.ph</a>
+          </p>
+          <p><strong>Personal Email:</strong><br>
+            <a href="mailto:juliusalcantara215@gmail.com">juliusalcantara215@gmail.com</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
